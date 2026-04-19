@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Таймер</string>
+
+    <string name="text_notification_timer">Фаза: %s</string>
+
+    <string name="phases_timer_work">Работа</string>
+    <string name="phases_timer_rest">Отдых</string>
+    <string name="phases_timer_warmup">Разминка</string>
+    <string name="phases_timer_cooldown">Заминка</string>
+
+    <plurals name="left_seconds">
+        <item quantity="one">%d секунда</item>
+        <item quantity="few">%d секунды</item>
+        <item quantity="many">%d секунд</item>
+        <item quantity="other">%d секунд</item>
+    </plurals>
+
+    <string name="timer_service_resume">Возобновить</string>
+    <string name="timer_service_pause">Пауза</string>
+
+    <string name="setting_title">Настройки</string>
+    <string name="adding_title">Добавление</string>
+    <string name="editing_title">Редактирование</string>
+    <string name="timer_title">Таймер</string>
+    <string name="editing_timer_title">Редактирование таймера</string>
+    <string name="creating_timer_title">Создание таймера</string>
+
+    <string name="example_name_timer">Напр: Стандартный</string>
+    <string name="name_timer">Название таймера</string>
+    <string name="colour">Цвет</string>
+    <string name="repetitions">Повторы</string>
+    <string name="phases">Фазы</string>
+    <string name="add_phase">Добавить фазу</string>
+    <string name="cycle_2arg">Цикл: %1$d / %2$d</string>
+    <string name="delete_timer">Удалить таймер</string>
+    <string name="delete_all">Удалить всё</string>
+    <string name="stop">Стоп</string>
+
+    <string name="previous">Назад</string>
+    <string name="next">Далее</string>
+    <string name="upcoming_phases">Предстоящие фазы</string>
+
+    <string name="language_selection">Выбор языка</string>
+    <string name="language_system">Cистемный</string>
+    <string name="theme_selection">Выбор темы</string>
+
+    <string name="theme_system">Системная</string>
+    <string name="theme_light">Светлая</string>
+    <string name="theme_dark">Тёмная</string>
+</resources>

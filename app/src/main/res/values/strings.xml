@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Timer</string>
+
+    <string name="text_notification_timer">Phase: %s</string>
+
+    <string name="phases_timer_work">Work</string>
+    <string name="phases_timer_rest">Rest</string>
+    <string name="phases_timer_warmup">Warmup</string>
+    <string name="phases_timer_cooldown">Cooldown</string>
+    
+    <plurals name="left_seconds">
+        <item quantity="one">%d second</item>
+        <item quantity="other">%d seconds</item>
+    </plurals>
+
+    <string name="timer_service_resume">Resume</string>
+    <string name="timer_service_pause">Pause</string>
+
+    <string name="setting_title">Settings</string>
+    <string name="adding_title">Adding</string>
+    <string name="editing_title">Editing</string>
+    <string name="timer_title">Timer</string>
+    <string name="editing_timer_title">Editing timer</string>
+    <string name="creating_timer_title">Creating timer</string>
+
+    <string name="example_name_timer">e.g. Standard</string>
+    <string name="name_timer">Name timer</string>
+    <string name="colour">Colour</string>
+    <string name="repetitions">Repetitions</string>
+    <string name="phases">Phases</string>
+    <string name="add_phase">Add phase</string>
+    <string name="cycle_2arg">Cycle: %1$d / %2$d</string>
+    <string name="delete_timer">Delete timer</string>
+    <string name="delete_all">Delete all</string>
+    <string name="stop">Stop</string>
+
+    <string name="previous">Previous</string>
+    <string name="next">Next</string>
+    <string name="upcoming_phases">Upcoming phases</string>
+
+    <string name="language_selection">Language selector</string>
+    <string name="language_system">System</string>
+
+    <string name="theme_selection">Theme selector</string>
+    <string name="theme_system">System</string>
+    <string name="theme_light">Light</string>
+    <string name="theme_dark">Dark</string>
+</resources>
+

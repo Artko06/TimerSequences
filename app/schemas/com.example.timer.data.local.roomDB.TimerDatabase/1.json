@@ -1,0 +1,115 @@
+{
+  "formatVersion": 1,
+  "database": {
+    "version": 1,
+    "identityHash": "f84cbed17d3c977121bcd5425dd397a9",
+    "entities": [
+      {
+        "tableName": "sequences",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`sequence_id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `seq_name` TEXT NOT NULL, `color` INTEGER NOT NULL, `repeat_count` INTEGER NOT NULL)",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "sequence_id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "seqName",
+            "columnName": "seq_name",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "color",
+            "columnName": "color",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "repeatCount",
+            "columnName": "repeat_count",
+            "affinity": "INTEGER",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": true,
+          "columnNames": [
+            "sequence_id"
+          ]
+        }
+      },
+      {
+        "tableName": "phases",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`phase_id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `sequence_id` INTEGER NOT NULL, `type` TEXT NOT NULL, `duration_phase` INTEGER NOT NULL, `number_phase` INTEGER NOT NULL, FOREIGN KEY(`sequence_id`) REFERENCES `sequences`(`sequence_id`) ON UPDATE NO ACTION ON DELETE CASCADE )",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "phase_id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "sequenceId",
+            "columnName": "sequence_id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "type",
+            "columnName": "type",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "durationPhase",
+            "columnName": "duration_phase",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "numberPhase",
+            "columnName": "number_phase",
+            "affinity": "INTEGER",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": true,
+          "columnNames": [
+            "phase_id"
+          ]
+        },
+        "indices": [
+          {
+            "name": "index_phases_sequence_id",
+            "unique": false,
+            "columnNames": [
+              "sequence_id"
+            ],
+            "orders": [],
+            "createSql": "CREATE INDEX IF NOT EXISTS `index_phases_sequence_id` ON `${TABLE_NAME}` (`sequence_id`)"
+          }
+        ],
+        "foreignKeys": [
+          {
+            "table": "sequences",
+            "onDelete": "CASCADE",
+            "onUpdate": "NO ACTION",
+            "columns": [
+              "sequence_id"
+            ],
+            "referencedColumns": [
+              "sequence_id"
+            ]
+          }
+        ]
+      }
+    ],
+    "setupQueries": [
+      "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, 'f84cbed17d3c977121bcd5425dd397a9')"
+    ]
+  }
+}

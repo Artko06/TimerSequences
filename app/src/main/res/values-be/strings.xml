@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Таймер</string>
+
+    <string name="text_notification_timer">Фаза: %s</string>
+
+    <string name="phases_timer_work">Праца</string>
+    <string name="phases_timer_rest">Адпачынак</string>
+    <string name="phases_timer_warmup">Разагрэў</string>
+    <string name="phases_timer_cooldown">Замінка</string>
+
+    <plurals name="left_seconds">
+        <item quantity="one">%d секунда</item>
+        <item quantity="few">%d секунды</item>
+        <item quantity="many">%d секунд</item>
+        <item quantity="other">%d секунды</item>
+    </plurals>
+
+    <string name="timer_service_resume">Аднавіць</string>
+    <string name="timer_service_pause">Паўза</string>
+
+    <string name="setting_title">Налады</string>
+    <string name="adding_title">Даданне</string>
+    <string name="editing_title">Рэдагаванне</string>
+    <string name="timer_title">Таймер</string>
+    <string name="editing_timer_title">Рэдагаванне таймера</string>
+    <string name="creating_timer_title">Стварэнне таймера</string>
+
+    <string name="example_name_timer">напрыклад, Стандартны</string>
+    <string name="name_timer">Назва таймера</string>
+    <string name="colour">Колер</string>
+    <string name="repetitions">Паўторы</string>
+    <string name="phases">Фазы</string>
+    <string name="add_phase">Дадаць фазу</string>
+    <string name="cycle_2arg">Цыкл: %1$d / %2$d</string>
+    <string name="delete_timer">Выдаліць таймер</string>
+    <string name="stop">Спыніць</string>
+    <string name="delete_all">Выдаліць усё</string>
+
+    <string name="previous">Назад</string>
+    <string name="next">Далей</string>
+    <string name="upcoming_phases">Наступныя фазы</string>
+
+    <string name="language_selection">Выбар мовы</string>
+    <string name="language_system">Сістэмная</string>
+
+    <string name="theme_selection">Выбар тэмы</string>
+    <string name="theme_system">Сістэмная</string>
+    <string name="theme_light">Светлая</string>
+    <string name="theme_dark">Цёмная</string>
+
+</resources>

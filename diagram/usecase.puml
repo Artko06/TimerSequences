@@ -1,0 +1,41 @@
+@startuml
+left to right direction
+actor "Пользователь" as User
+
+package "Управление таймерами" {
+usecase "Просмотр списка таймеров" as UC_ViewList
+usecase "Создание нового таймера" as UC_Create
+usecase "Редактирование таймера" as UC_Edit
+usecase "Удаление таймера" as UC_Delete
+}
+
+package "Таймер" {
+usecase "Просмотр фаз таймера" as UC_Show_phases
+usecase "Запуск таймера" as UC_Start
+usecase "Пауза / Возобновление" as UC_Toggle
+usecase "Переключение фаз (Вперед/Назад)" as UC_Nav
+usecase "Остановка таймера" as UC_Stop
+}
+
+package "Настройки" {
+usecase "Смена темы (System/Light/Dark)" as UC_Theme
+usecase "Смена языка (System/en/ru/be)" as UC_Lang
+usecase "Очистка всех таймерных последовательностей" as UC_Delete_all
+}
+
+User --> UC_ViewList
+User --> UC_Create
+User --> UC_Edit
+User --> UC_Delete
+
+User --> UC_Show_phases
+User --> UC_Start
+User --> UC_Toggle
+User --> UC_Nav
+User --> UC_Stop
+
+User --> UC_Theme
+User --> UC_Lang
+User --> UC_Delete_all
+
+@endum
