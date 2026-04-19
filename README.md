@@ -1,7 +1,5 @@
 ## Screenshots
 
-###
-
 <p align='center'>
   <img src='screenshots/list_timers.png' width='25%'/>
 </p>
